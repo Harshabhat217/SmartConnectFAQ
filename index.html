@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>FAQ SCA</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <!-- Closest web font to Vi Bold -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&family=Nunito:wght@400&display=swap" rel="stylesheet"/>
     <style>
         * {
             -webkit-tap-highlight-color: transparent;
@@ -12,7 +14,7 @@
 
         body {
             background-color: #f0f0f5;
-            font-family: 'Segoe UI', sans-serif;
+            font-family: 'Nunito', 'Segoe UI', sans-serif;
             padding: 16px;
             margin: 0;
         }
@@ -31,10 +33,12 @@
             background: #ffffff;
         }
 
+        /* Question text - matches styleViBold */
         .accordion-button {
-            font-size: 0.95rem;
-            font-weight: 600;
-            color: #1a1a2e;
+            font-family: 'Nunito', 'Segoe UI', sans-serif;
+            font-size: 14px;        /* matches @dimen/_14ssp */
+            font-weight: 700;       /* matches fontfamily_vi_bold */
+            color: #2f3043;         /* matches @color/colorDeepBlack */
             background: #ffffff;
             box-shadow: none !important;
             padding: 18px 16px;
@@ -43,15 +47,13 @@
         }
 
         .accordion-button:not(.collapsed) {
-            color: #1a1a2e;
+            font-family: 'Nunito', 'Segoe UI', sans-serif;
+            font-size: 14px;        /* matches @dimen/_14ssp */
+            font-weight: 700;       /* matches fontfamily_vi_bold */
+            color: #2f3043;         /* matches @color/colorDeepBlack */
             background: #ffffff;
             box-shadow: none !important;
             border-radius: 14px 14px 0 0 !important;
-        }
-
-        .accordion-button::after {
-            /* Default bootstrap chevron - keep as is */
-            flex-shrink: 0;
         }
 
         .accordion-button:focus {
@@ -64,14 +66,16 @@
             padding: 0 16px 16px 16px;
         }
 
+        /* Answer text - regular weight, same color family */
         .answer-inner {
             background: #f5f5f5;
             border-radius: 8px;
             border-left: 5px solid #e63946;
             padding: 12px 14px;
-            font-size: 0.88rem;
-            font-weight: 400;
-            color: #4a4a4a;
+            font-family: 'Nunito', 'Segoe UI', sans-serif;
+            font-size: 13px;        /* slightly smaller than question */
+            font-weight: 400;       /* regular for answer text */
+            color: #2f3043;         /* same colorDeepBlack */
             line-height: 1.7;
         }
 
@@ -99,7 +103,8 @@
                     <div id="faq1" class="accordion-collapse collapse">
                         <div class="accordion-body">
                             <div class="answer-inner">
-                                Please provide the SIMEX access in CPOS first for such retailers and do the SIMEX in Smart Connect App.
+                                Please provide the SIMEX access in CPOS first for such 
+                                retailers and do the SIMEX in Smart Connect App.
                             </div>
                         </div>
                     </div>
@@ -119,7 +124,8 @@
                     <div id="faq2" class="accordion-collapse collapse">
                         <div class="accordion-body">
                             <div class="answer-inner">
-                                User need to check with circle team for whitelisting and do registration again.
+                                User need to check with circle team for whitelisting 
+                                and do registration again.
                             </div>
                         </div>
                     </div>
@@ -139,7 +145,8 @@
                     <div id="faq3" class="accordion-collapse collapse">
                         <div class="accordion-body">
                             <div class="answer-inner">
-                                Agent RD service is not updated. Please update respective RD service as per device through Play Store.
+                                Agent RD service is not updated. Please update respective 
+                                RD service as per device through Play Store.
                             </div>
                         </div>
                     </div>
@@ -159,7 +166,9 @@
                     <div id="faq4" class="accordion-collapse collapse">
                         <div class="accordion-body">
                             <div class="answer-inner">
-                                Please click on the 'send otp' button if the existing timer gets over. The App will again send OTP to the agent for POS authentication.
+                                Please click on the 'send otp' button if the existing 
+                                timer gets over. The App will again send OTP to the 
+                                agent for POS authentication.
                             </div>
                         </div>
                     </div>
@@ -173,13 +182,16 @@
                         <button class="accordion-button collapsed" type="button"
                             data-bs-toggle="collapse" data-bs-target="#faq5"
                             aria-expanded="false" aria-controls="faq5">
-                            Getting error "Hi, you are not authorized to perform provisioning activities outside your defined circle/LSA. Kindly connect with your Vi company representative for details".
+                            Getting error "Hi, you are not authorized to perform 
+                            provisioning activities outside your defined circle/LSA. 
+                            Kindly connect with your Vi company representative for details".
                         </button>
                     </h2>
                     <div id="faq5" class="accordion-collapse collapse">
                         <div class="accordion-body">
                             <div class="answer-inner">
-                                Agent RD service is not updated. Please update respective RD service as per device through Play Store.
+                                Agent RD service is not updated. Please update respective 
+                                RD service as per device through Play Store.
                             </div>
                         </div>
                     </div>
